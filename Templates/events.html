@@ -1,0 +1,112 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+{% block content %}
+	 <!-- Events Section -->
+    <section id="events" class="events section">
+
+      <img class="slider-bg" src="{% static 'assets/img/events-bg.jpg' %}" alt="" data-aos="fade-in">
+
+      <div class="container">
+
+        <div class="swiper init-swiper" data-aos="fade-up" data-aos-delay="100">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row gy-4 event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'assets/img/events-slider/events-slider-1.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Birthday Parties</h3>
+                  <div class="price">
+                    <p><span>100,000sh</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Organizing a birthday party can be daunting, especially when you want to make it a remarkable event for you and your guests. A restaurant party is an excellent option for those looking for a fun and stress-free way to celebrate their special day. Not only do restaurants provide delicious food and drinks.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>1. Karaoke Night.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>2. Brunch Party.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>3. Wine Tasting.</span></li>
+                  </ul>
+                  <p>
+                    At Myna, every dish is a celebration, bringing pleasure to your palate and igniting your imagination. Join them for a dining experience that nourishes the soul and creates unforgettable memories.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Slider item -->
+
+            <div class="swiper-slide">
+              <div class="row gy-4 event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'assets/img/events-slider/events-slider-2.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Private Parties</h3>
+                  <div class="price">
+                    <p><span>150,000</span></p>
+                  </div>
+                  <p class="fst-italic">
+              A secluded space, section or room within a restaurant or venue where you can enjoy a dining experience with a select number of guests away from the main restaurant. They're perfect for small weddings, birthday parties, and corporate meetings and events.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>Enjoy our fully equipped Private Dining area with a Chef's table.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Private bar and sliding doors</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>You can book your one and only chefs.</span></li>
+                  </ul>
+                  <p>
+                     Mmerse yourself in the best experience of al fresco dining within the city in a lush, sunken, multi-level garden setting with secret nooks and hidden crannies.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Slider item -->
+
+            <div class="swiper-slide">
+              <div class="row gy-4 event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'assets/img/events-slider/events-slider-3.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Custom Parties</h3>
+                  <div class="price">
+                    <p><span>70,000sh</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Host a themed costume party at your restaurant, like an ugly sweater party, an enchanted garden theme, or a literary legends soiree for you.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>Special entertainment for everyone.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Personalised service is garenteed at our catered events.</span></li>
+                    <li><i class="bi bi-check2-circle"></i> <span>Offer private rooms with audiovisual facilities.</span></li>
+                  </ul>
+                  <p>
+                    Alternatively, cooking classes work well to attract larger groups of customers, such as hen and stag parties, clubs, and larger friendship groups.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Slider item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Events Section -->
+
+{% endblock %}

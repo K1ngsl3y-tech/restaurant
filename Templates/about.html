@@ -1,0 +1,35 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+{% block content %}
+     <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+            <img src="{% static 'assets/img/about.jpg' %}" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+          </div>
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>Welcome to our famous resturant.</h3>
+            <p class="fst-italic">
+              Beautiful and delicious meal
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>Breakfast is available.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Lunch is also available.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>You can come with your family and friends to celebrate any occassion of your choices eg;Birthday parties,normal parties and e.t.c.</span></li>
+            </ul>
+            <p>
+             Lovely parties are also allowed
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+{% endblock %}

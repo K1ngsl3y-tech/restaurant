@@ -1,0 +1,104 @@
+{% extends 'starter-page.html' %}
+{% load static %}
+{% block content %}
+	<!-- Specials Section -->
+    <section id="specials" class="specials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Specials</h2>
+        <div><span>Check Our Special Meals</span> <span class="description-title">Specials Meals for everyone</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#specials-tab-1">Vegetarian Raw Meal (RVML)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-2">Kosher meals (KSML):</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-3">Hindu Meal (HOML): </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-4">Vegetarian Vegan Meal  (VGML):</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-5">Bland Meal (BLML):</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="specials-tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>All vegetarian food type</h3>
+                    <p class="fst-italic">This meal is prepared for raw vegetable vegetarians; it is a combination of raw fruit and vegetables:</p>
+                    <p>It may contain meat or poultry, fresh vegetables, packaged or frozen fruit and vegetables not processed with lactose, soy beverages as a substitute for milk, coffee creamers from non-dairy ingredients.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/specials-1.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Jewish meals</h3>
+                    <p class="fst-italic">This meal is for passengers who follow Jewish customs and are prepared with strict compliance of the Jewish dietary requirements. </p>
+                    <p>These meals should be 48 hours before your scheduled departure and may not be available on all Kenya Airways flights.  .  </p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/specials-2.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Hindu meals</h3>
+                    <p class="fst-italic">This meal is for passengers wishing to follow Hindu customs and may contain one or more of the following ingredients</p>
+                    <p>It contains; lamb, domestic fowl, fish, milk products, spicy foods, and curry.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/specials-3.jpg' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Vegetarian Vegan Meal </h3>
+                    <p class="fst-italic">This meal is prepared for vegan or pure vegetarian guests and does not contain any animal products or by products (eggs or dairy products)</p>
+                    <p>It may contain high protein foods (lentils, beans, tofu), foods rich in iron (dried peas, beans, lentils, wholegrain products, dried apricots) and calcium (broccoli, mustard greens, kale, tofu, navy beans, dried figs, almonds, ground or in paste sesame seeds, brazil nuts, pistachio nuts).</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/vegmael.png' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Bland Meal</h3>
+                    <p class="fst-italic">This meal is available for passengers suffering from stomach / intestinal problems.</p>
+                    <p>It contains mostly soft foods that are easily digestible and without spices, such as mashed potatoes, fresh spinach, soft-boiled eggs, boiled meats, toast, milk, decaffeinated coffee, tea, and dairy products.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'assets/img/blandmeal.png' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Specials Section -->
+{% endblock %}
