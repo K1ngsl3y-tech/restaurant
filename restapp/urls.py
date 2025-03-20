@@ -16,6 +16,12 @@ urlpatterns = [
     path('contact/', views.contact1, name='contact'),
     path('table/', views.table1, name='table'),
     path('show/', views.show, name='show'),
+    path('delete/<int:id>', views.delete),
+    path('edit/<int:id>', views.edit, name='edit'),
+    path('pay/', views.pay, name='pay'),
+    path('stk/', views.stk, name='stk'),
+    path('token/', views.token, name='token'),
+    path('transactions/', views.transactions_list, name='transactions'),
 
 
 
